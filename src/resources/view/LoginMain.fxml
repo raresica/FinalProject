@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="340.0" prefWidth="624.0" style="-fx-background-color: #6CE1E9;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerLoginMain">
+   <children>
+      <JFXPasswordField fx:id="password" layoutX="191.0" layoutY="180.0" prefHeight="26.0" prefWidth="242.0" promptText="Enter your Password" />
+      <ImageView fitHeight="62.0" fitWidth="101.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Gym.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="165.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="165.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/username.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="62.0" prefHeight="46.0" prefWidth="145.0" text="My Gym">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username" layoutX="191.0" layoutY="134.0" prefHeight="26.0" prefWidth="242.0" promptText="Enter your Username" />
+      <JFXButton fx:id="signup" layoutX="516.0" layoutY="22.0" onAction="#onClickActionSignUp" prefHeight="30.0" prefWidth="78.0" text="Sign UP" />
+      <JFXCheckBox fx:id="remember" layoutX="183.0" layoutY="250.0" text="Remember Me" />
+      <JFXButton fx:id="login" layoutX="354.0" layoutY="244.0" prefHeight="30.0" prefWidth="78.0" text="Login" />
+   </children>
+</AnchorPane>
