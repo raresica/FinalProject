@@ -15,7 +15,7 @@
       <Button fx:id="Login" layoutX="484.0" layoutY="36.0" mnemonicParsing="false" onAction="#onClickActionLogIn" text="Login" />
       <Button fx:id="SignUp" layoutX="235.0" layoutY="299.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="33.0" prefWidth="127.0" text="Sign UP" />
       <JFXTextField fx:id="username" layoutX="220.0" layoutY="140.0" prefHeight="25.0" prefWidth="165.0" promptText="Enter your Username" />
-      <JFXRadioButton fx:id="male" layoutX="221.0" layoutY="256.0" selected="true" text="Male" />
+      <JFXRadioButton fx:id="male" layoutX="221.0" layoutY="256.0" text="Male" />
       <JFXRadioButton fx:id="female" layoutX="314.0" layoutY="256.0" text="Female" />
       <ImageView fitHeight="83.0" fitWidth="91.0" layoutX="36.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
          <image>
