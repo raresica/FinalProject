@@ -8,9 +8,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -72,11 +74,25 @@ public class ControllerLoginMain implements Initializable {
                 count++;
             }
             if (count==1){
-                System.out.println("Login Succesfull");
+                login.getScene().getWindow().hide();
+
+
+                try {
+                    Parent root = FXMLLoader.load(getClass().getResource("../resources/view/test.fxml"));
+                    Stage test = new Stage();
+                    test.setScene(new Scene(root));
+                    test.show();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
             }
             else
             {
-                System.out.println("Username or Password are is not correct");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setContentText("Username or password is not correct!");
+                alert.show();
             }
         } catch (SQLException e) {
             e.printStackTrace();
