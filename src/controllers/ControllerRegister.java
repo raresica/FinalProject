@@ -60,9 +60,9 @@ public class ControllerRegister implements Initializable {
         Login.getScene().getWindow().hide();
 
         Parent root = FXMLLoader.load(getClass().getResource("../resources/view/LoginMain.fxml"));
-        Stage signUpStage = new Stage();
-        signUpStage.setScene(new Scene(root));
-        signUpStage.show();
+        Stage loginStage = new Stage();
+        loginStage.setScene(new Scene(root));
+        loginStage.show();
     }
 
     @FXML

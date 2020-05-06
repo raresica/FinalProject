@@ -19,12 +19,10 @@
                </image>
             </ImageView>
             <Line endX="5.79998779296875" endY="-1.52587890625E-5" layoutX="115.0" layoutY="95.0" startX="-121.39999389648438" startY="-1.52587890625E-5" />
-            <Button fx:id="Halls" layoutX="66.0" layoutY="132.0" mnemonicParsing="false" onAction="#onClickActionHall" text="Halls" />
             <Button layoutX="42.0" layoutY="301.0" mnemonicParsing="false" text="Trainner Stats" />
             <Button layoutX="45.0" layoutY="219.0" mnemonicParsing="false" text="Add Trainers" />
+            <Button fx:id="halls" layoutX="65.0" layoutY="148.0" mnemonicParsing="false" onAction="#onClickActionHalls" text="Halls" />
          </children>
       </Pane>
-      <Label layoutX="272.0" layoutY="86.0" prefHeight="204.0" prefWidth="254.0" text="Bla bla bla Intro" />
-      <Pane layoutX="194.0" prefHeight="400.0" prefWidth="410.0" />
    </children>
 </AnchorPane>
