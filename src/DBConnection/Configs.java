@@ -7,5 +7,4 @@ public class Configs {
     protected static String dbpass = "admin";
     protected static String dbname= "final_project";
 
-
 }
