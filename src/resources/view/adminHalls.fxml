@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerAdminPage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerAdminHalls">
    <children>
-      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="58.0" layoutY="78.0" prefHeight="14.0" prefWidth="72.0">
+      <JFXButton fx:id="spinningClass" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="42.0" layoutY="78.0" onAction="#onClickActionSpinningClass" prefHeight="14.0" prefWidth="72.0">
          <graphic>
             <ImageView fitHeight="113.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -16,7 +17,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="382.0" layoutY="80.0" prefHeight="14.0" prefWidth="72.0">
+      <JFXButton fx:id="forceClass" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="382.0" layoutY="80.0" onAction="#onClickActionForceClass" prefHeight="14.0" prefWidth="72.0">
          <graphic>
             <ImageView fitHeight="120.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -25,7 +26,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="386.0" layoutY="231.0" prefHeight="14.0" prefWidth="72.0">
+      <JFXButton fx:id="yogaClass" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="386.0" layoutY="231.0" onAction="#onClickActionYogaClass" prefHeight="14.0" prefWidth="72.0">
          <graphic>
             <ImageView fitHeight="117.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -33,7 +34,7 @@
                </image>
             </ImageView>
          </graphic></JFXButton>
-      <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="41.0" layoutY="238.0" prefHeight="14.0" prefWidth="72.0">
+      <JFXButton fx:id="zumbaClass" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="41.0" layoutY="238.0" onAction="#onClickActionZumbaClass" prefHeight="14.0" prefWidth="72.0">
          <graphic>
             <ImageView fitHeight="97.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -42,5 +43,6 @@
             </ImageView>
          </graphic>
       </JFXButton>
+      <Button fx:id="back" layoutX="41.0" layoutY="357.0" mnemonicParsing="false" onAction="#onClickActionBack" text="&lt;-Back" />
    </children>
 </AnchorPane>
