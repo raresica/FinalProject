@@ -46,13 +46,13 @@ public class ControllerLoginMain implements Initializable {
     private ChoiceBox choiceBoxRole;
 
 
-    private DBHandler hander;
+    private DBHandler hanlder;
     private Connection connection;
     private PreparedStatement pst;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-    hander = new DBHandler();
+    hanlder = new DBHandler();
     choiceBoxRole.setItems(FXCollections.observableArrayList("ADMIN", new Separator(), "TRAINER", new Separator(), "CUSTOMER"));
     }
 
@@ -71,7 +71,7 @@ public class ControllerLoginMain implements Initializable {
     @FXML
     void loginAction(ActionEvent event) {
 
-        connection =hander.getConnection();
+        connection =hanlder.getConnection();
         if(getRole()=="ADMIN") {
             String q1 = "SELECT * FROM user_admin WHERE username=? and password=?";
 
@@ -130,7 +130,7 @@ public class ControllerLoginMain implements Initializable {
 
 
                     try {
-                        Parent root = FXMLLoader.load(getClass().getResource("../resources/view/trainerPage.fxml"));
+                        Parent root = FXMLLoader.load(getClass().getResource("../resources/view/AddTrainerPage.fxml"));
                         Stage test = new Stage();
                         test.setScene(new Scene(root));
                         test.show();

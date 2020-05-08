@@ -20,7 +20,7 @@
             </ImageView>
             <Line endX="5.79998779296875" endY="-1.52587890625E-5" layoutX="115.0" layoutY="95.0" startX="-121.39999389648438" startY="-1.52587890625E-5" />
             <Button layoutX="42.0" layoutY="301.0" mnemonicParsing="false" text="Trainner Stats" />
-            <Button layoutX="45.0" layoutY="219.0" mnemonicParsing="false" text="Add Trainers" />
+            <Button fx:id="addTrainer" layoutX="45.0" layoutY="219.0" mnemonicParsing="false" onAction="#onClickActionAddTrainer" text="Add Trainers" />
             <Button fx:id="halls" layoutX="65.0" layoutY="148.0" mnemonicParsing="false" onAction="#onClickActionHalls" text="Halls" />
          </children>
       </Pane>
